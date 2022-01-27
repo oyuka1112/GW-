@@ -1,0 +1,30 @@
+CREATE TABLE words(
+author INT,
+	word1 VARCHAR,
+	word2 VARCHAR,
+	source VARCHAR
+);
+
+Select *
+FROM words;
+
+
+SELECT *
+FROM words
+WHERE word1 = 'stone';
+
+SELECT *
+FROM words
+WHERE author <= 10;
+
+SELECT *
+FROM words
+WHERE word1='pie' OR word2 = 'pie';
+
+SELECT *
+FROM words
+WHERE source='BC';
+
+SELECT *
+FROM words
+WHERE source='BC' AND 333 <= author AND author <= 335;
